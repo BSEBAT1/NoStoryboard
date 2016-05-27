@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Jelloween - Machinato Light.ttf">
+            <string>Machinato-Light</string>
+            <string>Machinato-Light</string>
+        </mutableArray>
+        <mutableArray key="Jelloween - Machinato.ttf">
+            <string>Machinato</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="c3l-9u-x9I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyY-2I-g1i">
+                    <rect key="frame" x="16" y="265" width="288" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="7yF-Br-BXq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Machinato-Light" family="Machinato" pointSize="20"/>
+                    <state key="normal" title="Login" backgroundImage="login">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="apiSectionAction:" destination="-1" eventType="touchUpInside" id="E1z-6c-yAP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8J-gC-vJF">
+                    <rect key="frame" x="16" y="350" width="288" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="RIK-gI-5TB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Machinato-Light" family="Machinato" pointSize="20"/>
+                    <state key="normal" title="Animation Test" backgroundImage="animation">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="animationSectionAction:" destination="-1" eventType="touchUpInside" id="x0r-AK-Kgg"/>
+                    </connections>
+                </button>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCl-2d-o94">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="QMx-AG-tQV"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.12941176470588237" green="0.21176470588235294" blue="0.27058823529411763" alpha="0.9037446120689655" colorSpace="calibratedRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <fontDescription key="fontDescription" name="Machinato-Light" family="Machinato" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem title="Coding Tasks" id="4sb-X2-IiA"/>
+                    </items>
+                </navigationBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIv-WM-yxj">
+                    <rect key="frame" x="16" y="185" width="288" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="PxP-0w-dQc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="20"/>
+                    <state key="normal" title="Chat" backgroundImage="chat">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tableSectionAction:" destination="-1" eventType="touchUpInside" id="3Sa-RA-4sY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="leading" secondItem="dyY-2I-g1i" secondAttribute="leading" id="7jI-Rm-tbh"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="top" secondItem="hIv-WM-yxj" secondAttribute="bottom" constant="8" symbolic="YES" id="FXB-G1-D2O"/>
+                <constraint firstItem="eCl-2d-o94" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="L5L-2X-377"/>
+                <constraint firstItem="eCl-2d-o94" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="R4B-T5-7lk"/>
+                <constraint firstItem="u8J-gC-vJF" firstAttribute="top" secondItem="dyY-2I-g1i" secondAttribute="bottom" constant="13" id="XIx-Xd-8kw"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="leading" secondItem="u8J-gC-vJF" secondAttribute="leading" id="iEC-bY-OSB"/>
+                <constraint firstItem="eCl-2d-o94" firstAttribute="centerX" secondItem="hIv-WM-yxj" secondAttribute="centerX" id="lox-bN-caj"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="trailing" secondItem="u8J-gC-vJF" secondAttribute="trailing" id="lsh-B6-6gj"/>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="185" id="pPn-da-stW"/>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="t4L-ne-lQo"/>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="trailing" secondItem="dyY-2I-g1i" secondAttribute="trailing" id="uiw-MD-hcC"/>
+                <constraint firstAttribute="trailing" secondItem="eCl-2d-o94" secondAttribute="trailing" id="yer-c4-H3p"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="animation" width="245" height="54"/>
+        <image name="chat" width="245" height="54"/>
+        <image name="login" width="245" height="56"/>
+    </resources>
+</document>
