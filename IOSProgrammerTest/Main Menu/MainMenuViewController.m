@@ -11,6 +11,7 @@
 #import "LoginSectionViewController.h"
 #import "AnimationSectionViewController.h"
 
+
 @interface MainMenuViewController ()
 
 @end
@@ -20,7 +21,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bg_main_menu"]];
+    UIImage *image = [UIImage imageNamed:@"bg_main_menu"];
+    if([[UIScreen mainScreen]nativeBounds].size.width == 750.0) {
+        image = [UIImage imageNamed:@"iphone6"];
+    }
+    
+    
+    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:image];
+    
+    
     backgroundView.frame = self.view.bounds;
     [[self view] addSubview:backgroundView];
      [self.view insertSubview:backgroundView atIndex:0];
