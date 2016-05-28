@@ -22,9 +22,6 @@
 {
     [super viewDidLoad];
     UIImage *image = [UIImage imageNamed:@"bg_main_menu"];
-    if([[UIScreen mainScreen]nativeBounds].size.width == 750.0) {
-        image = [UIImage imageNamed:@"iphone6"];
-    }
     
     
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:image];
