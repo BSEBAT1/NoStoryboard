@@ -62,9 +62,6 @@
                         <fontDescription key="fontDescription" name="Machinato-Light" family="Machinato" pointSize="20"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </textAttributes>
-                    <items>
-                        <navigationItem title="Coding Tasks" id="4sb-X2-IiA"/>
-                    </items>
                 </navigationBar>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIv-WM-yxj">
                     <rect key="frame" x="16" y="185" width="382" height="72"/>

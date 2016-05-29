@@ -22,9 +22,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationController.navigationBar.topItem.title = @"";
     
     self.loadedChatData = [[NSMutableArray alloc] init];
     [self loadJSONData];
+     self.title=@"Chat";
 }
 
 - (void)loadJSONData

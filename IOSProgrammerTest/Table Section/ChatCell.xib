@@ -48,6 +48,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="IconView" destination="rdL-s9-64P" id="tuf-8E-9qb"/>
                 <outlet property="messageTextView" destination="30Y-cM-wdc" id="Qjw-mg-aEn"/>
                 <outlet property="usernameLabel" destination="n92-Oq-3Q8" id="imI-eL-nk0"/>
             </connections>

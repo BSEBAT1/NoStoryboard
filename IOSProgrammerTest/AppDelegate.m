@@ -24,9 +24,25 @@
     MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil];
 
     self.navController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
-    [self.navController setNavigationBarHidden:YES];
+    [self.navController setNavigationBarHidden:NO];
     self.window.rootViewController = self.navController;
-
+    UIColor *color = [[UIColor alloc] initWithRed:44/255.00 green:69/255.00 blue:86/255.00 alpha:0.9];
+[[UINavigationBar appearance] setBarTintColor:color];
+   
+    NSShadow *shadow = [NSShadow new];
+    [shadow setShadowColor:[UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0]];
+    [shadow setShadowOffset:CGSizeMake(0, 1)];
+    
+    NSDictionary *attributes = @{
+                                 NSForegroundColorAttributeName: [UIColor whiteColor],
+                                 NSShadowAttributeName: shadow,
+                                 NSFontAttributeName: [UIFont fontWithName:@"Machinato-Light" size:20.0]
+                                 };
+    
+    
+    [[UINavigationBar appearance]setTitleTextAttributes:attributes];
+    
+    
     return YES;
 }
 

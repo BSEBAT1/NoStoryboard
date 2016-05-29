@@ -18,10 +18,13 @@
 
 @implementation MainMenuViewController
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     UIImage *image = [UIImage imageNamed:@"bg_main_menu"];
+    self.title=@"Coding Tasks";
     
     
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:image];
@@ -30,6 +33,7 @@
     backgroundView.frame = self.view.bounds;
     [[self view] addSubview:backgroundView];
      [self.view insertSubview:backgroundView atIndex:0];
+    
 }
 
 - (void)didReceiveMemoryWarning
