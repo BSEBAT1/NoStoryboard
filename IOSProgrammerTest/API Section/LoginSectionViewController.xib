@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginSectionViewController">
             <connections>
+                <outlet property="UserPassword" destination="MLY-Pp-veu" id="F4H-0X-sgB"/>
+                <outlet property="Username" destination="mqX-sK-hpE" id="ZiB-QR-Af0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,18 +17,65 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDP-zC-6Xi">
-                    <rect key="frame" x="8" y="14" width="73" height="49"/>
-                    <state key="normal" title="Back">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4M-l7-LmD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Pjl-C5-yhG"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="Title" id="OWL-td-nxD"/>
+                    </items>
+                </navigationBar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loding" translatesAutoresizingMaskIntoConstraints="NO" id="Naj-QC-1Xy">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqX-sK-hpE">
+                    <rect key="frame" x="0.0" y="123" width="320" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zHz-P6-Jkv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MLY-Pp-veu">
+                    <rect key="frame" x="0.0" y="189" width="320" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="my7-O3-qFX">
+                    <rect key="frame" x="11" y="256" width="298" height="55"/>
+                    <state key="normal" title="Log In " backgroundImage="logbutton"/>
                     <connections>
-                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="J25-hm-NYq"/>
+                        <action selector="LogInPressed:" destination="-1" eventType="touchUpInside" id="KSU-H4-Sud"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Naj-QC-1Xy" firstAttribute="leading" secondItem="mqX-sK-hpE" secondAttribute="leading" id="86V-k1-D05"/>
+                <constraint firstItem="Naj-QC-1Xy" firstAttribute="trailing" secondItem="mqX-sK-hpE" secondAttribute="trailing" id="86n-8l-eS8"/>
+                <constraint firstItem="q4M-l7-LmD" firstAttribute="leading" secondItem="mqX-sK-hpE" secondAttribute="leading" id="DIX-ym-9Ef"/>
+                <constraint firstItem="q4M-l7-LmD" firstAttribute="trailing" secondItem="mqX-sK-hpE" secondAttribute="trailing" id="GFg-yf-2Mi"/>
+                <constraint firstItem="MLY-Pp-veu" firstAttribute="top" secondItem="mqX-sK-hpE" secondAttribute="bottom" constant="26" id="N3q-H5-hk1"/>
+                <constraint firstAttribute="bottom" secondItem="Naj-QC-1Xy" secondAttribute="bottom" id="NUb-n8-8Lk"/>
+                <constraint firstItem="MLY-Pp-veu" firstAttribute="centerX" secondItem="my7-O3-qFX" secondAttribute="centerX" id="QPF-SP-2Eu"/>
+                <constraint firstItem="mqX-sK-hpE" firstAttribute="top" secondItem="q4M-l7-LmD" secondAttribute="bottom" constant="79" id="QlJ-6V-nlg"/>
+                <constraint firstItem="Naj-QC-1Xy" firstAttribute="top" secondItem="q4M-l7-LmD" secondAttribute="bottom" id="T2P-z3-G5C"/>
+                <constraint firstItem="my7-O3-qFX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="WGY-A0-TEv"/>
+                <constraint firstItem="mqX-sK-hpE" firstAttribute="trailing" secondItem="MLY-Pp-veu" secondAttribute="trailing" id="aT5-AT-SiJ"/>
+                <constraint firstItem="mqX-sK-hpE" firstAttribute="leading" secondItem="MLY-Pp-veu" secondAttribute="leading" id="mxI-L1-Hsb"/>
+                <constraint firstItem="my7-O3-qFX" firstAttribute="top" secondItem="MLY-Pp-veu" secondAttribute="bottom" constant="27" id="ug3-uC-xdL"/>
+                <constraint firstItem="my7-O3-qFX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="xOs-IU-eAc"/>
+                <constraint firstItem="q4M-l7-LmD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xcg-vV-4q6"/>
+                <constraint firstItem="q4M-l7-LmD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yXU-js-JSv"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="loding" width="320" height="568"/>
+        <image name="logbutton" width="244" height="55"/>
+    </resources>
 </document>

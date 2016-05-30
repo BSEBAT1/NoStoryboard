@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginSectionViewController : UIViewController
+@interface LoginSectionViewController : UIViewController<NSURLConnectionDelegate>
+@property NSMutableData *response;
+@property NSDictionary *jsonDictB;
+@property double length;
 
 @end

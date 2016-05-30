@@ -7,7 +7,7 @@
 //
 
 #import "ChatCell.h"
-
+#import <QuartzCore/QuartzCore.h>
 
 @interface ChatCell ()
 @property (nonatomic, strong) IBOutlet UILabel *usernameLabel;
@@ -22,7 +22,10 @@
 - (void)awakeFromNib
 {
     // Initialization code
-    self.IconView.layer.cornerRadius=20;
+    self.IconView.layer.cornerRadius = self.IconView.frame.size.height/2;
+   self.IconView.clipsToBounds = YES;
+    
+
 }
 
 

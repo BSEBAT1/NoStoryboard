@@ -25,6 +25,7 @@
     [super viewDidLoad];
     UIImage *image = [UIImage imageNamed:@"bg_main_menu"];
     self.title=@"Coding Tasks";
+    [self.navigationItem setHidesBackButton:YES animated:YES];
     
     
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:image];
