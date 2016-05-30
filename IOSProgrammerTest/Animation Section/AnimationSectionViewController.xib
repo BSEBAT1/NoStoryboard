@@ -15,17 +15,26 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbj-IL-RFt">
-                    <rect key="frame" x="23" y="16" width="58" height="30"/>
-                    <state key="normal" title="Back">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="smt-Qj-UGc"/>
-                    </connections>
-                </button>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOD-V5-aW3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <items>
+                        <navigationItem title="Title" id="pd7-X7-gP2"/>
+                    </items>
+                </navigationBar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xA5-br-QSj">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UOD-V5-aW3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G6f-Es-Top"/>
+                <constraint firstItem="UOD-V5-aW3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JYj-i2-ByS"/>
+                <constraint firstItem="xA5-br-QSj" firstAttribute="top" secondItem="UOD-V5-aW3" secondAttribute="bottom" id="K5j-gr-mKD"/>
+                <constraint firstAttribute="bottom" secondItem="xA5-br-QSj" secondAttribute="bottom" id="N2E-HU-wBx"/>
+                <constraint firstAttribute="trailing" secondItem="UOD-V5-aW3" secondAttribute="trailing" id="PmI-LC-bwz"/>
+                <constraint firstItem="UOD-V5-aW3" firstAttribute="trailing" secondItem="xA5-br-QSj" secondAttribute="trailing" id="VkL-1K-FDR"/>
+                <constraint firstItem="UOD-V5-aW3" firstAttribute="leading" secondItem="xA5-br-QSj" secondAttribute="leading" id="kAF-WT-bGy"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
