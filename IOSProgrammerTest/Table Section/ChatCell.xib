@@ -5,46 +5,56 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Jelloween - Machinato.ttf">
+            <string>Machinato</string>
+            <string>Machinato</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="-12" id="KGk-i7-Jjw" customClass="ChatCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="-2" id="KGk-i7-Jjw" customClass="ChatCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n92-Oq-3Q8">
                         <rect key="frame" x="100" y="8" width="157" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="TyQ-Fa-Jh0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="18"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rdL-s9-64P">
                         <rect key="frame" x="8" y="5" width="60" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="DYD-FU-rLc"/>
+                            <constraint firstAttribute="width" constant="60" id="Rhg-4S-cn9"/>
                         </constraints>
                     </imageView>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore e" translatesAutoresizingMaskIntoConstraints="NO" id="30Y-cM-wdc">
-                        <rect key="frame" x="100" y="26" width="220" height="35"/>
+                        <rect key="frame" x="100" y="32" width="220" height="59"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.054901960784313725" green="0.054901960784313725" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="15"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="30Y-cM-wdc" secondAttribute="bottom" constant="20" id="6hb-cV-OC2"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="n92-Oq-3Q8" secondAttribute="trailing" constant="55" id="FZ1-7o-8KW"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="rdL-s9-64P" secondAttribute="bottom" constant="16" id="JpU-En-Pnh"/>
-                    <constraint firstItem="rdL-s9-64P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="LRn-Hq-CCj"/>
-                    <constraint firstItem="n92-Oq-3Q8" firstAttribute="leading" secondItem="rdL-s9-64P" secondAttribute="trailing" constant="32" id="MF5-Ef-UV0"/>
-                    <constraint firstItem="rdL-s9-64P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="MMx-V1-WW2"/>
-                    <constraint firstItem="n92-Oq-3Q8" firstAttribute="leading" secondItem="30Y-cM-wdc" secondAttribute="leading" id="dn8-uV-rVB"/>
-                    <constraint firstItem="n92-Oq-3Q8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="mWm-2G-L8O"/>
-                    <constraint firstItem="30Y-cM-wdc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="18" id="z2e-g1-RsC"/>
-                    <constraint firstAttribute="trailing" secondItem="30Y-cM-wdc" secondAttribute="trailing" id="zaU-Ev-N1i"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="rdL-s9-64P" secondAttribute="bottom" constant="26" id="5hf-dn-C6O"/>
+                    <constraint firstItem="rdL-s9-64P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6VA-58-xM9"/>
+                    <constraint firstItem="30Y-cM-wdc" firstAttribute="top" secondItem="n92-Oq-3Q8" secondAttribute="bottom" constant="3" id="8OU-O0-2e5"/>
+                    <constraint firstItem="n92-Oq-3Q8" firstAttribute="leading" secondItem="rdL-s9-64P" secondAttribute="trailing" constant="32" id="ERt-zo-prG"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="n92-Oq-3Q8" secondAttribute="trailing" constant="55" id="I9V-Xb-OcA"/>
+                    <constraint firstItem="n92-Oq-3Q8" firstAttribute="leading" secondItem="30Y-cM-wdc" secondAttribute="leading" id="Qaj-Fq-N9d"/>
+                    <constraint firstAttribute="trailing" secondItem="30Y-cM-wdc" secondAttribute="trailing" id="S7H-7J-0Zf"/>
+                    <constraint firstItem="n92-Oq-3Q8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Tzc-rz-F16"/>
+                    <constraint firstItem="30Y-cM-wdc" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="fST-N6-BP0"/>
+                    <constraint firstItem="rdL-s9-64P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="nfL-CK-Plw"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -52,7 +62,7 @@
                 <outlet property="messageTextView" destination="30Y-cM-wdc" id="Qjw-mg-aEn"/>
                 <outlet property="usernameLabel" destination="n92-Oq-3Q8" id="imI-eL-nk0"/>
             </connections>
-            <point key="canvasLocation" x="362" y="364"/>
+            <point key="canvasLocation" x="362" y="369"/>
         </tableViewCell>
     </objects>
 </document>

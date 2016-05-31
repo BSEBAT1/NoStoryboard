@@ -14,32 +14,25 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOD-V5-aW3">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="CQh-d7-Vj2"/>
+                        <constraint firstAttribute="height" constant="44" id="jsF-in-Zek"/>
                     </constraints>
                     <items>
                         <navigationItem title="Title" id="pd7-X7-gP2"/>
                     </items>
                 </navigationBar>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_animate" translatesAutoresizingMaskIntoConstraints="NO" id="xA5-br-QSj">
-                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
-                </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="gpc" translatesAutoresizingMaskIntoConstraints="NO" id="l6f-31-asI">
-                    <rect key="frame" x="87" y="222" width="140" height="132"/>
-                    <gestureRecognizers/>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="pca-ZG-DTP" appends="YES" id="g8G-Eb-CGX"/>
-                    </connections>
+                    <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ind-8O-fWy">
-                    <rect key="frame" x="36" y="463" width="235" height="50"/>
+                    <rect key="frame" x="36" y="631" width="329" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="VRG-Lu-kwF"/>
+                        <constraint firstAttribute="height" constant="50" id="VHX-EB-y3v"/>
                     </constraints>
                     <state key="normal" title="Spin" backgroundImage="spin"/>
                     <connections>
@@ -48,23 +41,30 @@
                         <action selector="StopTouch:" destination="-1" eventType="touchCancel" id="6b2-GX-af7"/>
                     </connections>
                 </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="gpc" translatesAutoresizingMaskIntoConstraints="NO" id="l6f-31-asI">
+                    <rect key="frame" x="121" y="302" width="140" height="132"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="pca-ZG-DTP" appends="YES" id="g8G-Eb-CGX"/>
+                    </connections>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="ind-8O-fWy" secondAttribute="bottom" constant="55" id="BzE-5Z-nyj"/>
-                <constraint firstItem="UOD-V5-aW3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G6f-Es-Top"/>
-                <constraint firstItem="UOD-V5-aW3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JYj-i2-ByS"/>
-                <constraint firstItem="xA5-br-QSj" firstAttribute="top" secondItem="UOD-V5-aW3" secondAttribute="bottom" id="K5j-gr-mKD"/>
-                <constraint firstAttribute="bottom" secondItem="xA5-br-QSj" secondAttribute="bottom" id="N2E-HU-wBx"/>
-                <constraint firstAttribute="trailing" secondItem="UOD-V5-aW3" secondAttribute="trailing" id="PmI-LC-bwz"/>
-                <constraint firstItem="UOD-V5-aW3" firstAttribute="trailing" secondItem="xA5-br-QSj" secondAttribute="trailing" id="VkL-1K-FDR"/>
-                <constraint firstItem="ind-8O-fWy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="W1C-H8-o2j"/>
-                <constraint firstItem="l6f-31-asI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="222" id="XCg-Yt-0eb"/>
-                <constraint firstAttribute="trailing" secondItem="ind-8O-fWy" secondAttribute="trailing" constant="49" id="Ynd-fL-LgM"/>
-                <constraint firstItem="UOD-V5-aW3" firstAttribute="leading" secondItem="xA5-br-QSj" secondAttribute="leading" id="kAF-WT-bGy"/>
-                <constraint firstItem="l6f-31-asI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="87" id="o2I-gk-Ike"/>
+                <constraint firstItem="UOD-V5-aW3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3qH-Im-o1w"/>
+                <constraint firstItem="xA5-br-QSj" firstAttribute="top" secondItem="UOD-V5-aW3" secondAttribute="bottom" id="IKb-BD-Uzr"/>
+                <constraint firstAttribute="trailing" secondItem="ind-8O-fWy" secondAttribute="trailing" constant="49" id="LuH-Kk-e88"/>
+                <constraint firstItem="UOD-V5-aW3" firstAttribute="trailing" secondItem="xA5-br-QSj" secondAttribute="trailing" id="MQn-eS-P6g"/>
+                <constraint firstItem="ind-8O-fWy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="XcR-vP-5E5"/>
+                <constraint firstItem="UOD-V5-aW3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Z5V-9k-wMR"/>
+                <constraint firstAttribute="trailing" secondItem="UOD-V5-aW3" secondAttribute="trailing" id="aRd-C4-pLR"/>
+                <constraint firstItem="l6f-31-asI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="b9A-LN-z4D"/>
+                <constraint firstAttribute="bottom" secondItem="xA5-br-QSj" secondAttribute="bottom" id="kT5-ob-S8e"/>
+                <constraint firstItem="UOD-V5-aW3" firstAttribute="leading" secondItem="xA5-br-QSj" secondAttribute="leading" id="o6E-rM-cWi"/>
+                <constraint firstItem="l6f-31-asI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="121" id="qZX-jH-6AK"/>
+                <constraint firstAttribute="bottom" secondItem="ind-8O-fWy" secondAttribute="bottom" constant="55" id="vUq-Go-5kR"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
         </view>
         <panGestureRecognizer minimumNumberOfTouches="1" id="pca-ZG-DTP">
             <connections>

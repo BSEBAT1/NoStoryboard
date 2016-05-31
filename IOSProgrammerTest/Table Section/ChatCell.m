@@ -33,9 +33,8 @@
 
 - (void)loadWithData:(ChatData *)chatData
 {
-    self.usernameLabel.text = chatData.username;
-    self.messageTextView.text = chatData.message;
-    self.IconView.image = [UIImage imageNamed:@"icn_default"];
+   
+   
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     dispatch_async(queue, ^{
         NSURL *url = [[NSURL alloc] initWithString:chatData.avatar_url];
@@ -43,6 +42,8 @@
         UIImage *image = [UIImage imageWithData:data];
         dispatch_async(dispatch_get_main_queue(), ^{
             self.IconView.image = image;
+            self.usernameLabel.text = chatData.username;
+            self.messageTextView.text = chatData.message;
         });  
     });
     

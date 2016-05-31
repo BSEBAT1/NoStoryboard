@@ -4,6 +4,12 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Jelloween - Machinato.ttf">
+            <string>Machinato</string>
+            <string>Machinato</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginSectionViewController">
             <connections>
@@ -14,38 +20,43 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4M-l7-LmD">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="Pjl-C5-yhG"/>
+                        <constraint firstAttribute="height" constant="44" id="9W2-c4-OMT"/>
                     </constraints>
                     <items>
                         <navigationItem title="Title" id="OWL-td-nxD"/>
                     </items>
                 </navigationBar>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loding" translatesAutoresizingMaskIntoConstraints="NO" id="Naj-QC-1Xy">
-                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                 </imageView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqX-sK-hpE">
-                    <rect key="frame" x="0.0" y="123" width="320" height="40"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="UserName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqX-sK-hpE">
+                    <rect key="frame" x="0.0" y="98" width="414" height="40"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="40" id="zHz-P6-Jkv"/>
+                        <constraint firstAttribute="height" constant="40" id="pDz-gS-tDy"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="18"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MLY-Pp-veu">
-                    <rect key="frame" x="0.0" y="189" width="320" height="40"/>
+                    <rect key="frame" x="0.0" y="166" width="414" height="40"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="q1v-kF-ClV"/>
+                    </constraints>
+                    <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="18"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="my7-O3-qFX">
-                    <rect key="frame" x="11" y="256" width="298" height="55"/>
+                    <rect key="frame" x="19" y="237" width="359" height="55"/>
                     <state key="normal" title="Log In " backgroundImage="logbutton"/>
                     <connections>
                         <action selector="LogInPressed:" destination="-1" eventType="touchUpInside" id="KSU-H4-Sud"/>
@@ -54,24 +65,24 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Naj-QC-1Xy" firstAttribute="leading" secondItem="mqX-sK-hpE" secondAttribute="leading" id="86V-k1-D05"/>
-                <constraint firstItem="Naj-QC-1Xy" firstAttribute="trailing" secondItem="mqX-sK-hpE" secondAttribute="trailing" id="86n-8l-eS8"/>
-                <constraint firstItem="q4M-l7-LmD" firstAttribute="leading" secondItem="mqX-sK-hpE" secondAttribute="leading" id="DIX-ym-9Ef"/>
-                <constraint firstItem="q4M-l7-LmD" firstAttribute="trailing" secondItem="mqX-sK-hpE" secondAttribute="trailing" id="GFg-yf-2Mi"/>
-                <constraint firstItem="MLY-Pp-veu" firstAttribute="top" secondItem="mqX-sK-hpE" secondAttribute="bottom" constant="26" id="N3q-H5-hk1"/>
-                <constraint firstAttribute="bottom" secondItem="Naj-QC-1Xy" secondAttribute="bottom" id="NUb-n8-8Lk"/>
-                <constraint firstItem="MLY-Pp-veu" firstAttribute="centerX" secondItem="my7-O3-qFX" secondAttribute="centerX" id="QPF-SP-2Eu"/>
-                <constraint firstItem="mqX-sK-hpE" firstAttribute="top" secondItem="q4M-l7-LmD" secondAttribute="bottom" constant="79" id="QlJ-6V-nlg"/>
-                <constraint firstItem="Naj-QC-1Xy" firstAttribute="top" secondItem="q4M-l7-LmD" secondAttribute="bottom" id="T2P-z3-G5C"/>
-                <constraint firstItem="my7-O3-qFX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="WGY-A0-TEv"/>
-                <constraint firstItem="mqX-sK-hpE" firstAttribute="trailing" secondItem="MLY-Pp-veu" secondAttribute="trailing" id="aT5-AT-SiJ"/>
-                <constraint firstItem="mqX-sK-hpE" firstAttribute="leading" secondItem="MLY-Pp-veu" secondAttribute="leading" id="mxI-L1-Hsb"/>
-                <constraint firstItem="my7-O3-qFX" firstAttribute="top" secondItem="MLY-Pp-veu" secondAttribute="bottom" constant="27" id="ug3-uC-xdL"/>
-                <constraint firstItem="my7-O3-qFX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="11" id="xOs-IU-eAc"/>
-                <constraint firstItem="q4M-l7-LmD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xcg-vV-4q6"/>
-                <constraint firstItem="q4M-l7-LmD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yXU-js-JSv"/>
+                <constraint firstAttribute="bottom" secondItem="Naj-QC-1Xy" secondAttribute="bottom" id="C88-7R-Zmf"/>
+                <constraint firstItem="MLY-Pp-veu" firstAttribute="top" secondItem="mqX-sK-hpE" secondAttribute="bottom" constant="28" id="Doq-UT-iRP"/>
+                <constraint firstItem="q4M-l7-LmD" firstAttribute="leading" secondItem="mqX-sK-hpE" secondAttribute="leading" id="IBO-BY-w5S"/>
+                <constraint firstItem="mqX-sK-hpE" firstAttribute="trailing" secondItem="MLY-Pp-veu" secondAttribute="trailing" id="J4V-Pg-KYZ"/>
+                <constraint firstItem="my7-O3-qFX" firstAttribute="top" secondItem="MLY-Pp-veu" secondAttribute="bottom" constant="31" id="RNG-I9-7hI"/>
+                <constraint firstAttribute="trailing" secondItem="q4M-l7-LmD" secondAttribute="trailing" id="T6a-MD-PtD"/>
+                <constraint firstItem="Naj-QC-1Xy" firstAttribute="leading" secondItem="mqX-sK-hpE" secondAttribute="leading" id="TNR-Ib-ubn"/>
+                <constraint firstItem="q4M-l7-LmD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dY6-cP-dfP"/>
+                <constraint firstItem="Naj-QC-1Xy" firstAttribute="top" secondItem="q4M-l7-LmD" secondAttribute="bottom" id="e75-PO-y9D"/>
+                <constraint firstAttribute="trailing" secondItem="my7-O3-qFX" secondAttribute="trailing" constant="36" id="eUT-rO-I1Y"/>
+                <constraint firstItem="mqX-sK-hpE" firstAttribute="top" secondItem="q4M-l7-LmD" secondAttribute="bottom" constant="54" id="jqY-kR-wOr"/>
+                <constraint firstItem="q4M-l7-LmD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lfn-cf-HIK"/>
+                <constraint firstItem="Naj-QC-1Xy" firstAttribute="trailing" secondItem="MLY-Pp-veu" secondAttribute="trailing" id="olg-Qe-Rs8"/>
+                <constraint firstItem="q4M-l7-LmD" firstAttribute="trailing" secondItem="mqX-sK-hpE" secondAttribute="trailing" id="seI-Ks-RzK"/>
+                <constraint firstItem="my7-O3-qFX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="19" id="tm5-hr-c2n"/>
+                <constraint firstItem="mqX-sK-hpE" firstAttribute="leading" secondItem="MLY-Pp-veu" secondAttribute="leading" id="uwL-8q-MTB"/>
             </constraints>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
         </view>
     </objects>
     <resources>

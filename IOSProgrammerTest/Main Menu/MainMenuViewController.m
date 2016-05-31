@@ -24,8 +24,9 @@
 {
     [super viewDidLoad];
     UIImage *image = [UIImage imageNamed:@"bg_main_menu"];
-    self.title=@"Coding Tasks";
-    [self.navigationItem setHidesBackButton:YES animated:YES];
+    
+    
+    [self.navigationItem setHidesBackButton:YES animated:NO];
     
     
     UIImageView *backgroundView = [[UIImageView alloc] initWithImage:image];
@@ -35,6 +36,10 @@
     [[self view] addSubview:backgroundView];
      [self.view insertSubview:backgroundView atIndex:0];
     
+    
+}
+- (void) viewWillAppear:(BOOL)animated {
+    self.navigationItem.title = @"Coding Tasks";
 }
 
 - (void)didReceiveMemoryWarning

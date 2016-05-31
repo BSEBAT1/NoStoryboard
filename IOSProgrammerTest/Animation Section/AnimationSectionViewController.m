@@ -24,6 +24,12 @@
     
 }
 
+//- (IBAction)backAction:(id)sender
+//{
+//    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] init];
+//    [self.navigationController pushViewController:mainMenuViewController animated:YES];
+//}
+
 
 
 - (IBAction)ButtonPressed:(id)sender {
@@ -44,16 +50,9 @@
     
 }
 
-
-//- (IBAction)backAction:(id)sender
-//{
-//    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] init];
-//    [self.navigationController pushViewController:mainMenuViewController animated:YES];
-//}
-
 - (void)rotateImageView
 {
-    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+[UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
         [self.imageView setTransform:CGAffineTransformRotate(self.imageView.transform, M_PI_2)];
     }completion:^(BOOL finished){
         if (finished) {

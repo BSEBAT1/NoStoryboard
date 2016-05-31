@@ -11,7 +11,6 @@
 		4434B5B61A3FBB7100687081 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4434B5B51A3FBB7100687081 /* main.m */; };
 		4434B5B91A3FBB7100687081 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4434B5B81A3FBB7100687081 /* AppDelegate.m */; };
 		4434B5C11A3FBB7100687081 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4434B5C01A3FBB7100687081 /* Images.xcassets */; };
-		4434B5C41A3FBB7100687081 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4434B5C21A3FBB7100687081 /* LaunchScreen.xib */; };
 		4434B5D01A3FBB7100687081 /* IOSProgrammerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4434B5CF1A3FBB7100687081 /* IOSProgrammerTestTests.m */; };
 		522CB2D81CF7D5CF0031E888 /* Jelloween - Machinato Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 522CB2D61CF7D58D0031E888 /* Jelloween - Machinato Light.ttf */; };
 		522CB2D91CF7D5D30031E888 /* Jelloween - Machinato.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 522CB2D71CF7D5B10031E888 /* Jelloween - Machinato.ttf */; };
@@ -47,7 +46,6 @@
 		4434B5B71A3FBB7100687081 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4434B5B81A3FBB7100687081 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4434B5C01A3FBB7100687081 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4434B5C31A3FBB7100687081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4434B5C91A3FBB7100687081 /* IOSProgrammerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSProgrammerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4434B5CE1A3FBB7100687081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4434B5CF1A3FBB7100687081 /* IOSProgrammerTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSProgrammerTestTests.m; sourceTree = "<group>"; };
@@ -116,7 +114,6 @@
 				DC932C111A40A50A000035B7 /* Table Section */,
 				4434B5B71A3FBB7100687081 /* AppDelegate.h */,
 				4434B5B81A3FBB7100687081 /* AppDelegate.m */,
-				4434B5C21A3FBB7100687081 /* LaunchScreen.xib */,
 				4434B5C01A3FBB7100687081 /* Images.xcassets */,
 				4434B5B31A3FBB7100687081 /* Supporting Files */,
 			);
@@ -287,7 +284,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4434B5C41A3FBB7100687081 /* LaunchScreen.xib in Resources */,
 				522CB2D91CF7D5D30031E888 /* Jelloween - Machinato.ttf in Resources */,
 				DC932C211A40A50A000035B7 /* ChatSectionViewController.xib in Resources */,
 				DC932C191A40A50A000035B7 /* AnimationSectionViewController.xib in Resources */,
@@ -342,17 +338,6 @@
 			targetProxy = 4434B5CA1A3FBB7100687081 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4434B5C21A3FBB7100687081 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4434B5C31A3FBB7100687081 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4434B5D11A3FBB7100687081 /* Debug */ = {
@@ -436,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = IOSProgrammerTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apppartner.$(PRODUCT_NAME:rfc1034identifier)";
@@ -447,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = IOSProgrammerTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apppartner.$(PRODUCT_NAME:rfc1034identifier)";

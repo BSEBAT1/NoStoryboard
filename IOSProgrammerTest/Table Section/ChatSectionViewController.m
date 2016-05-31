@@ -10,7 +10,7 @@
 #import "MainMenuViewController.h"
 #import "ChatCell.h"
 
-#define TABLE_CELL_HEIGHT 90.00f
+#define TABLE_CELL_HEIGHT 100.00f
 
 @interface ChatSectionViewController ()
 @property (nonatomic, strong) IBOutlet UITableView *tableView;

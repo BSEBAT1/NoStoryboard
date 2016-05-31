@@ -92,6 +92,16 @@
     // Do any additional setup after loading the view from its nib.
     self.title=@"Login";
     self.navigationController.navigationBar.topItem.title = @"";
+    UIColor *color = [UIColor blackColor];
+    self.Username.attributedPlaceholder =
+    [[NSAttributedString alloc] initWithString:@"Placeholder Text"
+                                    attributes:@{
+                                                 NSForegroundColorAttributeName: color,
+                                                 NSFontAttributeName : [UIFont fontWithName:@"Roboto-Bold" size:17.0]
+                                                 }
+     ];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
