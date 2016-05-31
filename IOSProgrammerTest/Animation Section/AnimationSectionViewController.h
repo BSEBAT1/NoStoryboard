@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface AnimationSectionViewController : UIViewController
+- (IBAction)handlePan:(UIPanGestureRecognizer *)recognizer;
 
 @end

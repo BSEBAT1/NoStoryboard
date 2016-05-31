@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AnimationSectionViewController">
             <connections>
+                <outlet property="ImageView" destination="l6f-31-asI" id="gry-ST-a9r"/>
+                <outlet property="imageView" destination="l6f-31-asI" id="M9Z-ej-T1o"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,25 +19,62 @@
             <subviews>
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UOD-V5-aW3">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="CQh-d7-Vj2"/>
+                    </constraints>
                     <items>
                         <navigationItem title="Title" id="pd7-X7-gP2"/>
                     </items>
                 </navigationBar>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xA5-br-QSj">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_animate" translatesAutoresizingMaskIntoConstraints="NO" id="xA5-br-QSj">
                     <rect key="frame" x="0.0" y="44" width="320" height="524"/>
                 </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="gpc" translatesAutoresizingMaskIntoConstraints="NO" id="l6f-31-asI">
+                    <rect key="frame" x="87" y="222" width="140" height="132"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="pca-ZG-DTP" appends="YES" id="g8G-Eb-CGX"/>
+                    </connections>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ind-8O-fWy">
+                    <rect key="frame" x="36" y="463" width="235" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="VRG-Lu-kwF"/>
+                    </constraints>
+                    <state key="normal" title="Spin" backgroundImage="spin"/>
+                    <connections>
+                        <action selector="ButtonPressed:" destination="-1" eventType="touchDown" id="nAo-4K-CT6"/>
+                        <action selector="ButtonReleased:" destination="-1" eventType="touchUpInside" id="nKC-Kd-f1M"/>
+                        <action selector="StopTouch:" destination="-1" eventType="touchCancel" id="6b2-GX-af7"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="ind-8O-fWy" secondAttribute="bottom" constant="55" id="BzE-5Z-nyj"/>
                 <constraint firstItem="UOD-V5-aW3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G6f-Es-Top"/>
                 <constraint firstItem="UOD-V5-aW3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JYj-i2-ByS"/>
                 <constraint firstItem="xA5-br-QSj" firstAttribute="top" secondItem="UOD-V5-aW3" secondAttribute="bottom" id="K5j-gr-mKD"/>
                 <constraint firstAttribute="bottom" secondItem="xA5-br-QSj" secondAttribute="bottom" id="N2E-HU-wBx"/>
                 <constraint firstAttribute="trailing" secondItem="UOD-V5-aW3" secondAttribute="trailing" id="PmI-LC-bwz"/>
                 <constraint firstItem="UOD-V5-aW3" firstAttribute="trailing" secondItem="xA5-br-QSj" secondAttribute="trailing" id="VkL-1K-FDR"/>
+                <constraint firstItem="ind-8O-fWy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="36" id="W1C-H8-o2j"/>
+                <constraint firstItem="l6f-31-asI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="222" id="XCg-Yt-0eb"/>
+                <constraint firstAttribute="trailing" secondItem="ind-8O-fWy" secondAttribute="trailing" constant="49" id="Ynd-fL-LgM"/>
                 <constraint firstItem="UOD-V5-aW3" firstAttribute="leading" secondItem="xA5-br-QSj" secondAttribute="leading" id="kAF-WT-bGy"/>
+                <constraint firstItem="l6f-31-asI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="87" id="o2I-gk-Ike"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="pca-ZG-DTP">
+            <connections>
+                <action selector="handlePan:" destination="-1" id="ZeT-xb-AUo"/>
+            </connections>
+        </panGestureRecognizer>
     </objects>
+    <resources>
+        <image name="bg_animate" width="320" height="568"/>
+        <image name="gpc" width="140" height="132"/>
+        <image name="spin" width="245" height="56"/>
+    </resources>
 </document>

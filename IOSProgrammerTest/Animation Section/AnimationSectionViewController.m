@@ -10,6 +10,7 @@
 #import "MainMenuViewController.h"
 
 @interface AnimationSectionViewController ()
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -18,19 +19,46 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.title=@"Animation";
+    self.navigationController.navigationBar.topItem.title = @"";
+    
 }
 
-- (void)didReceiveMemoryWarning
+
+
+- (IBAction)ButtonPressed:(id)sender {
+    
+    [self rotateImageView];
+}
+
+- (IBAction)ButtonReleased:(id)sender {
+    [self.imageView.layer removeAllAnimations];
+}
+
+
+- (IBAction)handlePan:(UIPanGestureRecognizer *)recognizer {
+    
+    CGPoint translation = [recognizer translationInView:self.view];
+    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,recognizer.view.center.y + translation.y);
+    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+    
+}
+
+
+//- (IBAction)backAction:(id)sender
+//{
+//    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] init];
+//    [self.navigationController pushViewController:mainMenuViewController animated:YES];
+//}
+
+- (void)rotateImageView
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [UIView animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
+        [self.imageView setTransform:CGAffineTransformRotate(self.imageView.transform, M_PI_2)];
+    }completion:^(BOOL finished){
+        if (finished) {
+            [self rotateImageView];
+        }
+    }];
 }
-
-- (IBAction)backAction:(id)sender
-{
-    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] init];
-    [self.navigationController pushViewController:mainMenuViewController animated:YES];
-}
-
 @end
