@@ -8,6 +8,7 @@
         <mutableArray key="Jelloween - Machinato.ttf">
             <string>Machinato</string>
             <string>Machinato</string>
+            <string>Machinato</string>
         </mutableArray>
     </customFonts>
     <objects>
@@ -57,6 +58,7 @@
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="my7-O3-qFX">
                     <rect key="frame" x="19" y="237" width="359" height="55"/>
+                    <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="22"/>
                     <state key="normal" title="Log In " backgroundImage="logbutton"/>
                     <connections>
                         <action selector="LogInPressed:" destination="-1" eventType="touchUpInside" id="KSU-H4-Sud"/>
