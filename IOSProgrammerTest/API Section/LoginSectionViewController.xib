@@ -41,7 +41,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="pDz-gS-tDy"/>
                     </constraints>
-                    <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="18"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
@@ -51,7 +51,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="q1v-kF-ClV"/>
                     </constraints>
-                    <color key="textColor" red="0.46274509800000002" green="0.46274509800000002" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.043137254901960784" green="0.043137254901960784" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="18"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
