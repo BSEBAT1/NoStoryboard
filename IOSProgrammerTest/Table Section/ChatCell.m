@@ -33,6 +33,10 @@ self.IconView.clipsToBounds = YES;
 
 - (void)loadWithData:(ChatData *)chatData
 {
+    
+    self.usernameLabel.text = chatData.username;
+    self.messageTextView.text = chatData.message;
+    
    //Asynch loading for smoother user expereince
 dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     dispatch_async(queue, ^{
@@ -42,9 +46,8 @@ dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH,
        
         dispatch_async(dispatch_get_main_queue(), ^{
             self.IconView.image = image;
-            self.usernameLabel.text = chatData.username;
-            self.messageTextView.text = chatData.message;
-            //Always Update UI on main queue
+        //always update ui on main queue 
+            
         });  
     });
     

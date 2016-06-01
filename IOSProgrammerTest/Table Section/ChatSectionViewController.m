@@ -71,6 +71,7 @@ id JSONData = [NSJSONSerialization JSONObjectWithData:rawData options:NSJSONRead
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *cellIdentifier = @"ChatCell";
     ChatCell *cell = nil;
 
