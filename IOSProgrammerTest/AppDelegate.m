@@ -21,12 +21,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
 
-    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil];
+MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil];
     
-    self.navController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
-    [self.navController setNavigationBarHidden:NO];
-    self.window.rootViewController = self.navController;
-    UIColor *color = [[UIColor alloc] initWithRed:44/255.00 green:69/255.00 blue:86/255.00 alpha:0.9];
+self.navController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
+
+#pragma mark –Configure NavBar
+[self.navController setNavigationBarHidden:NO];
+self.window.rootViewController = self.navController;
+UIColor *color = [[UIColor alloc] initWithRed:44/255.00 green:69/255.00 blue:86/255.00 alpha:0.9];//Custom Color
     
 [[UINavigationBar appearance] setBarTintColor:color];
 NSShadow *shadow = [NSShadow new];
@@ -38,7 +40,9 @@ NSForegroundColorAttributeName: [UIColor whiteColor],
 NSShadowAttributeName: shadow,
 NSFontAttributeName: [UIFont fontWithName:@"Machinato-Light" size:20.0]};
 [[UINavigationBar appearance]setTitleTextAttributes:attributes];
+    //Instead of creating multiple nav bars and back buttons we can just use configure the navigation bar once
 return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

@@ -18,9 +18,11 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    self.title=@"Animation";
-    self.navigationController.navigationBar.topItem.title = @"";
+#pragma mark –Set Title
+[super viewDidLoad];
+self.title=@"Animation";
+self.navigationController.navigationBar.topItem.title = @"";
+//Creates blank back arrow
     
 }
 
@@ -29,8 +31,10 @@
 //    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] init];
 //    [self.navigationController pushViewController:mainMenuViewController animated:YES];
 //}
+//Using The Back Button Provided in Navigation Bar
 
 
+#pragma mark –Animation Functions
 
 - (IBAction)ButtonPressed:(id)sender {
     
@@ -39,15 +43,16 @@
 
 - (IBAction)ButtonReleased:(id)sender {
     [self.imageView.layer removeAllAnimations];
+    
 }
 
 
 - (IBAction)handlePan:(UIPanGestureRecognizer *)recognizer {
     
-    CGPoint translation = [recognizer translationInView:self.view];
-    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,recognizer.view.center.y + translation.y);
-    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
-    
+CGPoint translation = [recognizer translationInView:self.view];
+recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x,recognizer.view.center.y + translation.y);
+[recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+  //Use Gesture Recog for moving image
 }
 
 - (void)rotateImageView
@@ -57,6 +62,7 @@
     }completion:^(BOOL finished){
         if (finished) {
             [self rotateImageView];
+            //Completion Calls Self To Continue Spin
         }
     }];
 }

@@ -31,15 +31,15 @@
 
 - (void)loadJSONData
 {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"chatData" ofType:@"json"];
+NSString *filePath = [[NSBundle mainBundle] pathForResource:@"chatData" ofType:@"json"];
 
-    NSError *error = nil;
+NSError *error = nil;
 
-    NSData *rawData = [NSData dataWithContentsOfFile:filePath options:NSDataReadingMappedIfSafe error:&error];
+NSData *rawData = [NSData dataWithContentsOfFile:filePath options:NSDataReadingMappedIfSafe error:&error];
 
-    id JSONData = [NSJSONSerialization JSONObjectWithData:rawData options:NSJSONReadingAllowFragments error:&error];
+id JSONData = [NSJSONSerialization JSONObjectWithData:rawData options:NSJSONReadingAllowFragments error:&error];
 
-    [self.loadedChatData removeAllObjects];
+[self.loadedChatData removeAllObjects];
     if ([JSONData isKindOfClass:[NSDictionary class]])
     {
         NSDictionary *jsonDict = (NSDictionary *)JSONData;
@@ -58,17 +58,14 @@
 
     [self.tableView reloadData];
 }
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-- (IBAction)backAction:(id)sender
-{
-    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] init];
-    [self.navigationController pushViewController:mainMenuViewController animated:YES];
-}
+
+//- (IBAction)backAction:(id)sender
+//{
+//    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] init];
+//    [self.navigationController pushViewController:mainMenuViewController animated:YES];
+//}
+//Using Back Button on Nav view
 
 #pragma mark - UITableViewDataSource
 

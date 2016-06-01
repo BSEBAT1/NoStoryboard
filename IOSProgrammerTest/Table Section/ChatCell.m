@@ -22,9 +22,9 @@
 - (void)awakeFromNib
 {
     // Initialization code
-    self.IconView.layer.cornerRadius = self.IconView.frame.size.height/2;
-   self.IconView.clipsToBounds = YES;
-    
+self.IconView.layer.cornerRadius = self.IconView.frame.size.height/2;
+self.IconView.clipsToBounds = YES;
+ //Divide object by half its height to get a circle !
 
 }
 
@@ -33,17 +33,18 @@
 
 - (void)loadWithData:(ChatData *)chatData
 {
-   
-   
-    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+   //Asynch loading for smoother user expereince
+dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     dispatch_async(queue, ^{
         NSURL *url = [[NSURL alloc] initWithString:chatData.avatar_url];
         NSData *data = [NSData dataWithContentsOfURL:url];
         UIImage *image = [UIImage imageWithData:data];
+       
         dispatch_async(dispatch_get_main_queue(), ^{
             self.IconView.image = image;
             self.usernameLabel.text = chatData.username;
             self.messageTextView.text = chatData.message;
+            //Always Update UI on main queue
         });  
     });
     

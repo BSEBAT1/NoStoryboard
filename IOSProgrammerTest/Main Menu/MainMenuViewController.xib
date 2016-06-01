@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Jelloween - Machinato Light.ttf">
@@ -25,9 +26,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyY-2I-g1i">
-                    <rect key="frame" x="16" y="265" width="382" height="72"/>
+                    <rect key="frame" x="24" y="265" width="366" height="72"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="72" id="zZe-Un-ipE"/>
+                        <constraint firstAttribute="height" constant="72" id="W1X-Ru-4sg"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Machinato-Light" family="Machinato" pointSize="20"/>
                     <state key="normal" title="Login" backgroundImage="login">
@@ -39,9 +40,9 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8J-gC-vJF">
-                    <rect key="frame" x="16" y="350" width="382" height="72"/>
+                    <rect key="frame" x="24" y="350" width="366" height="72"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="72" id="w95-dl-seH"/>
+                        <constraint firstAttribute="height" constant="72" id="MJy-1P-aVb"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Machinato-Light" family="Machinato" pointSize="20"/>
                     <state key="normal" title="Animation Test" backgroundImage="animation">
@@ -55,7 +56,7 @@
                 <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCl-2d-o94">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="44" id="5CJ-rE-aaz"/>
+                        <constraint firstAttribute="height" constant="44" id="ts8-fq-RzV"/>
                     </constraints>
                     <color key="barTintColor" red="0.12941176470588237" green="0.21176470588235294" blue="0.27058823529411763" alpha="0.9037446120689655" colorSpace="calibratedRGB"/>
                     <textAttributes key="titleTextAttributes">
@@ -64,9 +65,9 @@
                     </textAttributes>
                 </navigationBar>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIv-WM-yxj">
-                    <rect key="frame" x="16" y="185" width="382" height="72"/>
+                    <rect key="frame" x="24" y="185" width="366" height="72"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="72" id="Seq-pJ-NPd"/>
+                        <constraint firstAttribute="height" constant="72" id="LQK-NV-FVQ"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Machinato" family="Machinato" pointSize="20"/>
                     <state key="normal" title="Chat" backgroundImage="chat">
@@ -78,19 +79,18 @@
                 </button>
             </subviews>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="eCl-2d-o94" secondAttribute="trailing" id="0a2-x2-UHE"/>
-                <constraint firstItem="eCl-2d-o94" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7v3-ZR-HmM"/>
-                <constraint firstItem="dyY-2I-g1i" firstAttribute="top" secondItem="hIv-WM-yxj" secondAttribute="bottom" constant="8" symbolic="YES" id="CPh-bN-gai"/>
-                <constraint firstItem="eCl-2d-o94" firstAttribute="centerX" secondItem="hIv-WM-yxj" secondAttribute="centerX" id="Cuv-nQ-K5S"/>
-                <constraint firstAttribute="trailing" secondItem="hIv-WM-yxj" secondAttribute="trailing" constant="16" id="Isv-Tx-doc"/>
-                <constraint firstItem="hIv-WM-yxj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="185" id="Oez-HD-Biq"/>
-                <constraint firstItem="eCl-2d-o94" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PxJ-ha-cCe"/>
-                <constraint firstItem="dyY-2I-g1i" firstAttribute="leading" secondItem="u8J-gC-vJF" secondAttribute="leading" id="SxO-7P-dYD"/>
-                <constraint firstItem="hIv-WM-yxj" firstAttribute="trailing" secondItem="dyY-2I-g1i" secondAttribute="trailing" id="gkg-qx-X7x"/>
-                <constraint firstItem="hIv-WM-yxj" firstAttribute="leading" secondItem="dyY-2I-g1i" secondAttribute="leading" id="kHx-kj-21P"/>
-                <constraint firstItem="u8J-gC-vJF" firstAttribute="top" secondItem="dyY-2I-g1i" secondAttribute="bottom" constant="13" id="lHl-CO-TBB"/>
-                <constraint firstItem="dyY-2I-g1i" firstAttribute="trailing" secondItem="u8J-gC-vJF" secondAttribute="trailing" id="qG1-05-Zk3"/>
-                <constraint firstItem="hIv-WM-yxj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="u2n-2v-Ijl"/>
+                <constraint firstAttribute="trailingMargin" secondItem="dyY-2I-g1i" secondAttribute="trailing" constant="16" id="01t-qf-8eU"/>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="185" id="3M0-Q7-mX9"/>
+                <constraint firstItem="eCl-2d-o94" firstAttribute="centerX" secondItem="hIv-WM-yxj" secondAttribute="centerX" id="HnR-wz-t0O"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="16" id="LvJ-YA-qRi"/>
+                <constraint firstItem="u8J-gC-vJF" firstAttribute="top" secondItem="dyY-2I-g1i" secondAttribute="bottom" constant="13" id="QRN-qb-2k2"/>
+                <constraint firstItem="u8J-gC-vJF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="16" id="UBz-uh-IjN"/>
+                <constraint firstAttribute="trailingMargin" secondItem="hIv-WM-yxj" secondAttribute="trailing" constant="16" id="Xun-Eb-wX8"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="top" secondItem="hIv-WM-yxj" secondAttribute="bottom" constant="8" symbolic="YES" id="c4l-fm-pvu"/>
+                <constraint firstItem="eCl-2d-o94" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g2B-kD-GzH"/>
+                <constraint firstAttribute="trailingMargin" secondItem="u8J-gC-vJF" secondAttribute="trailing" constant="16" id="sCU-Nx-spP"/>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" constant="16" id="sza-TC-sE0"/>
+                <constraint firstItem="eCl-2d-o94" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ynM-Gi-NV7"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
         </view>

@@ -23,30 +23,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImage *image = [UIImage imageNamed:@"bg_main_menu"];
+
+#pragma mark –Set Background
     
+UIImage *image = [UIImage imageNamed:@"bg_main_menu"];
+[self.navigationItem setHidesBackButton:YES animated:NO];
+UIImageView *backgroundView = [[UIImageView alloc] initWithImage:image];
     
-    [self.navigationItem setHidesBackButton:YES animated:NO];
-    
-    
-    UIImageView *backgroundView = [[UIImageView alloc] initWithImage:image];
-    
-    
-    backgroundView.frame = self.view.bounds;
-    [[self view] addSubview:backgroundView];
-     [self.view insertSubview:backgroundView atIndex:0];
+backgroundView.frame = self.view.bounds;
+[[self view] addSubview:backgroundView];
+[self.view insertSubview:backgroundView atIndex:0];
     
     
 }
 - (void) viewWillAppear:(BOOL)animated {
     self.navigationItem.title = @"Coding Tasks";
+    //Always display title in nav bar even if you get there with back button
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 - (IBAction)tableSectionAction:(id)sender
 {
