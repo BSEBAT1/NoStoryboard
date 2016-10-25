@@ -43,7 +43,7 @@ NSURLSessionConfiguration *sessionConfiguration = [NSURLSessionConfiguration def
     //Init URl Session
     
 NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfiguration];
-NSURL *url = [NSURL URLWithString:@"http://www.berkaysebat.com/myprocessingscript.php"];
+NSURL *url = [NSURL URLWithString:@"http://dev.apppartner.com/AppPartnerProgrammerTest/scripts/login.php"];
     
 NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     request.HTTPBody = [postDataString dataUsingEncoding:NSUTF8StringEncoding];

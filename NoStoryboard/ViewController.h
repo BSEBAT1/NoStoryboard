@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
 
+
+
+@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@property (strong,nonatomic) UITableView *table;
+@property (strong,nonatomic) NSArray     *content;
+@property UIImageView *dot;
+@property NSString *demo;
 
 @end
 
