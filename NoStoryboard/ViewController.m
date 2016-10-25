@@ -20,7 +20,7 @@
     UIView *contentView = [[UIView alloc] initWithFrame:applicationFrame];
     
     contentView.backgroundColor = [UIColor whiteColor];
-    self.view = contentView;
+//    self.view = contentView;
     
     self.table = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     
