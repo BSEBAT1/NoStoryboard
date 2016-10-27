@@ -11,6 +11,8 @@
 		521626301DB3EC6B003169C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5216262F1DB3EC6B003169C4 /* AppDelegate.m */; };
 		521626331DB3EC6B003169C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521626321DB3EC6B003169C4 /* ViewController.m */; };
 		521626381DB3EC6B003169C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521626371DB3EC6B003169C4 /* Assets.xcassets */; };
+		5273BC681DC17CE30020C969 /* NewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5273BC671DC17CE30020C969 /* NewClass.m */; };
+		52F0C8631DC23986003CA4DC /* Nuevo.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F0C8621DC23986003CA4DC /* Nuevo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		521626321DB3EC6B003169C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		521626371DB3EC6B003169C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5216263C1DB3EC6B003169C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5273BC661DC17CE30020C969 /* NewClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewClass.h; sourceTree = "<group>"; };
+		5273BC671DC17CE30020C969 /* NewClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewClass.m; sourceTree = "<group>"; };
+		52F0C8611DC23986003CA4DC /* Nuevo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nuevo.h; sourceTree = "<group>"; };
+		52F0C8621DC23986003CA4DC /* Nuevo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nuevo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,10 @@
 		5216261F1DB3EC6B003169C4 = {
 			isa = PBXGroup;
 			children = (
+				5273BC661DC17CE30020C969 /* NewClass.h */,
+				52F0C8611DC23986003CA4DC /* Nuevo.h */,
+				52F0C8621DC23986003CA4DC /* Nuevo.m */,
+				5273BC671DC17CE30020C969 /* NewClass.m */,
 				5216262A1DB3EC6B003169C4 /* NoStoryboard */,
 				521626291DB3EC6B003169C4 /* Products */,
 			);
@@ -144,8 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				521626331DB3EC6B003169C4 /* ViewController.m in Sources */,
+				5273BC681DC17CE30020C969 /* NewClass.m in Sources */,
 				521626301DB3EC6B003169C4 /* AppDelegate.m in Sources */,
 				5216262D1DB3EC6B003169C4 /* main.m in Sources */,
+				52F0C8631DC23986003CA4DC /* Nuevo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
