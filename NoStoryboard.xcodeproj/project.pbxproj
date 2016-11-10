@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520E79FA1DC443C700BD20BB /* CustomCellsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 520E79F91DC443C700BD20BB /* CustomCellsCollectionViewCell.m */; };
 		5216262D1DB3EC6B003169C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5216262C1DB3EC6B003169C4 /* main.m */; };
 		521626301DB3EC6B003169C4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5216262F1DB3EC6B003169C4 /* AppDelegate.m */; };
 		521626331DB3EC6B003169C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 521626321DB3EC6B003169C4 /* ViewController.m */; };
 		521626381DB3EC6B003169C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521626371DB3EC6B003169C4 /* Assets.xcassets */; };
+		529C21291DC78D190019CC56 /* PlayerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 529C21281DC78D190019CC56 /* PlayerState.m */; };
+		52B3BAE01DC39F0C006A7616 /* CollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B3BADF1DC39F0C006A7616 /* CollectionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		520E79F81DC443C700BD20BB /* CustomCellsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellsCollectionViewCell.h; sourceTree = "<group>"; };
+		520E79F91DC443C700BD20BB /* CustomCellsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellsCollectionViewCell.m; sourceTree = "<group>"; };
 		521626281DB3EC6B003169C4 /* NoStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5216262C1DB3EC6B003169C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5216262E1DB3EC6B003169C4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -22,6 +27,10 @@
 		521626321DB3EC6B003169C4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		521626371DB3EC6B003169C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5216263C1DB3EC6B003169C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529C21271DC78D190019CC56 /* PlayerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerState.h; sourceTree = "<group>"; };
+		529C21281DC78D190019CC56 /* PlayerState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerState.m; sourceTree = "<group>"; };
+		52B3BADE1DC39F0C006A7616 /* CollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionController.h; sourceTree = "<group>"; };
+		52B3BADF1DC39F0C006A7616 /* CollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 				5216262F1DB3EC6B003169C4 /* AppDelegate.m */,
 				521626311DB3EC6B003169C4 /* ViewController.h */,
 				521626321DB3EC6B003169C4 /* ViewController.m */,
+				529C21271DC78D190019CC56 /* PlayerState.h */,
+				529C21281DC78D190019CC56 /* PlayerState.m */,
+				52B3BADE1DC39F0C006A7616 /* CollectionController.h */,
+				52B3BADF1DC39F0C006A7616 /* CollectionController.m */,
+				520E79F81DC443C700BD20BB /* CustomCellsCollectionViewCell.h */,
+				520E79F91DC443C700BD20BB /* CustomCellsCollectionViewCell.m */,
 				521626371DB3EC6B003169C4 /* Assets.xcassets */,
 				5216263C1DB3EC6B003169C4 /* Info.plist */,
 				5216262B1DB3EC6B003169C4 /* Supporting Files */,
@@ -143,7 +158,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				529C21291DC78D190019CC56 /* PlayerState.m in Sources */,
+				520E79FA1DC443C700BD20BB /* CustomCellsCollectionViewCell.m in Sources */,
 				521626331DB3EC6B003169C4 /* ViewController.m in Sources */,
+				52B3BAE01DC39F0C006A7616 /* CollectionController.m in Sources */,
 				521626301DB3EC6B003169C4 /* AppDelegate.m in Sources */,
 				5216262D1DB3EC6B003169C4 /* main.m in Sources */,
 			);

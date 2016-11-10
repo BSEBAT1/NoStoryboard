@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CollectionController.h"
+#import "PlayerState.h"
+
+
 
 
 
@@ -16,6 +20,16 @@
 @property (strong,nonatomic) NSArray     *content;
 @property UIImageView *dot;
 @property NSString *demo;
+@property NSInteger *haplo;
+
+
+typedef NS_ENUM(NSInteger,Fruits ) {
+    Fruits_Apple,
+    Fruits_Banana,
+    Anything_you_want
+};
+
+
 
 @end
 

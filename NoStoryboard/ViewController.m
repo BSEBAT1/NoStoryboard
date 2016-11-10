@@ -15,6 +15,8 @@
 @implementation ViewController
 @synthesize demo=_demo;
 
+
+
 - (void)viewDidLoad {
     CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
     UIView *contentView = [[UIView alloc] initWithFrame:applicationFrame];
@@ -23,6 +25,10 @@
     self.view = contentView;
     
     self.table = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+    self.demo=@"hello";
+   
+    NSLog(@"%@", self.demo);
+    
     
     
     self.table.dataSource = self;
@@ -35,7 +41,7 @@
     
     self.table.translatesAutoresizingMaskIntoConstraints=NO;
     
-    
+     
     
     self.dot =[[UIImageView alloc] initWithFrame:CGRectZero];
     self.dot.backgroundColor=[UIColor blueColor];
@@ -52,7 +58,7 @@ NSDictionary *viewsDictionary = @{@"redView":self.table,@"dotview":self.dot};
     
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[redView]-|" options:0 metrics:nil views:viewsDictionary]];
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[dotview]-|" options:0 metrics:nil views:viewsDictionary]];
-    self.table.bottomAnchor==self.view.bottomAnchor;
+    
    
     NSLayoutConstraint *equalbottom = [NSLayoutConstraint
         constraintWithItem:self.table
@@ -63,10 +69,6 @@ NSDictionary *viewsDictionary = @{@"redView":self.table,@"dotview":self.dot};
         multiplier:1.0
         constant:0];
     [self.view addConstraint:equalbottom];
-
-    
-    
-    
 
     
 }
@@ -97,13 +99,19 @@ NSDictionary *viewsDictionary = @{@"redView":self.table,@"dotview":self.dot};
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     NSLog(@"title of cell %@", [_content objectAtIndex:indexPath.row]);
+    CollectionController *myNewCollection = [[CollectionController alloc] init];
+    
+    // do any setup you need for myNewVC
+    
+    [self presentViewController:myNewCollection animated:NO completion:nil];
+    
 }
 -(NSString *)demo{
     return _demo;
 }
-
+///changed
 -(void)setDemo:(NSString *)newdemo{
-     _demo=newdemo;
+     _demo=[newdemo stringByAppendingString:@"you created another instance"];
    
 }
 
