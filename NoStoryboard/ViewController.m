@@ -109,7 +109,7 @@ NSDictionary *viewsDictionary = @{@"redView":self.table,@"dotview":self.dot};
 -(NSString *)demo{
     return _demo;
 }
-///changed random
+///changed random added stuff 
 -(void)setDemo:(NSString *)newdemo{
      _demo=[newdemo stringByAppendingString:@"you created another instance"];
    
