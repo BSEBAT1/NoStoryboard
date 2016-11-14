@@ -109,7 +109,7 @@ NSDictionary *viewsDictionary = @{@"redView":self.table,@"dotview":self.dot};
 -(NSString *)demo{
     return _demo;
 }
-///THIS IS THE MASTER BRANCH//
+///THIS IS THE MASTER BRANCH// NOT MASTER 
 
 -(void)setDemo:(NSString *)newdemo{
      _demo=[newdemo stringByAppendingString:@"you created another instance"];
